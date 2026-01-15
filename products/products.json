@@ -1,0 +1,13 @@
+{
+  "products": [
+    {
+      "name": "Brown Linen Kurta",
+      "image": "assets/img/masonry-portfolio/IMG_7851.jpg",
+      "price": 3500,
+      "category": "Bespoke Clothing",
+      "description": "Elegant brown linen kurta tailored for comfort and style.",
+      "is_new": true,
+      "date": "2026-01-10T00:00:00Z"
+    }
+  ]
+}
