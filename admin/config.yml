@@ -8,18 +8,15 @@ public_folder: "/assets/img/products"
 collections:
   - name: "products"
     label: "Products"
-    file: "data/products.json"
+    folder: "data/products"
+    create: true
     format: "json"
-    editor:
-      preview: false
+    extension: "json"
+    slug: "{{slug}}"
     fields:
-      - label: "Products"
-        name: "products"
-        widget: "list"
-        fields:
-          - { label: "Product Name", name: "name", widget: "string" }
-          - { label: "Price (INR)", name: "price", widget: "number" }
-          - { label: "Product Image", name: "image", widget: "image" }
-          - { label: "Description", name: "description", widget: "text", required: false }
-          - { label: "Mark as New", name: "is_new", widget: "boolean", default: false }
-          - { label: "Publish Date", name: "date", widget: "datetime", required: false }
+      - { label: "Product Name", name: "name", widget: "string" }
+      - { label: "Price (INR)", name: "price", widget: "number" }
+      - { label: "Product Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Mark as New", name: "is_new", widget: "boolean", default: false }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
